@@ -59,7 +59,7 @@ function detect_gpu() {
       echo 'nvidia'
       return
    else
-      echo 'intel'
+      echo 'amd'
       return
    fi
 }

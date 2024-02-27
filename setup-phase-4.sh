@@ -33,7 +33,7 @@ cd ..
 
 echog "Installing steam, audio and driver packages."
 if [[ "$GPU" == "amd" ]]; then
-   sudo pacman -q --noprogressbar -Syu libva-mesa-driver vulkan-radeon lib32-vulkan-radeon lib32-libva-mesa-driver --noconfirm || exit 1
+   sudo pacman -q --noprogressbar -Syu libva-mesa-driver vulkan-intel lib32-vulkan-intel lib32-libva-mesa-driver --noconfirm || exit 1
 elif [[ "$GPU" == "nvidia" ]]; then
    # TODO do something about packages that steam installs for vulkan but not needed for nvidia
    echog "Using host system driver mounts, not installing anything inside for nvidia drivers."
